@@ -11,6 +11,8 @@ import Services from "@/components/services"
 import Resources from "@/components/resources"
 import Training from "@/components/training"
 import About from "@/components/about"
+import Contact from "@/components/contact"
+import Careers from "@/components/careers"
 
 export default function App() {
   return (
@@ -33,6 +35,8 @@ export default function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/training" element={<Training />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/careers" element={<Careers />} />
           </Routes>
         </main>
         <Footer />
