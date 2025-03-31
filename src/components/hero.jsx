@@ -1,6 +1,7 @@
 // import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Terminal } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Hero() {
   return (
@@ -30,21 +31,21 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-6 md:mt-10 animate-fade-in animation-delay-200">
-            <a href="#features">
+            <Link to="/product">
               <Button size="lg" className="bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90 transition-all duration-300 hover:shadow-lg">
                 Product
               </Button>
-            </a>
-            <a href="#pricing">
+            </Link>
+            <Link to="/services">
               <Button size="lg" variant="outline" className="border-gray-200 hover:border-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 transition-all duration-300">
                 Services
               </Button>
-            </a>
-            <a href="#testimonials">
+            </Link>
+            <Link to="/training">
               <Button size="lg" className="bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90 transition-all duration-300 hover:shadow-lg">
                 Training
               </Button>
-            </a>
+            </Link>
           </div>
 
           {/* Terminal Code */}
