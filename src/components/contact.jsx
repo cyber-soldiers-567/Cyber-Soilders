@@ -87,24 +87,24 @@ export default function Contact() {
               {/* Animated contact options */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 pt-8 w-full max-w-3xl">
                 <div className="flex flex-col items-center animate-fade-in">
-                  <div className="p-4 rounded-full bg-primary/10 text-primary mb-3 animate-bounce-subtle">
+                  <div className="p-4 rounded-full bg-white-900 text-blue-100 mb-3 animate-bounce-subtle">
                     <Mail className="h-6 w-6" />
                   </div>
-                  <div className="text-lg font-medium">Email Us</div>
+                  <div className="text-lg font-medium text-blue-600">Email Us</div>
                   <div className="text-sm text-muted-foreground">Fast response within 24h</div>
                 </div>
                 <div className="flex flex-col items-center animate-fade-in" style={{animationDelay: '200ms'}}>
-                  <div className="p-4 rounded-full bg-primary/10 text-primary mb-3 animate-bounce-subtle" style={{animationDelay: '0.5s'}}>
+                  <div className="p-4 rounded-full bg-white-900 text-blue-100 mb-3 animate-bounce-subtle" style={{animationDelay: '0.5s'}}>
                     <Phone className="h-6 w-6" />
                   </div>
-                  <div className="text-lg font-medium">Call Us</div>
+                  <div className="text-lg font-medium text-blue-600">Call Us</div>
                   <div className="text-sm text-muted-foreground">24/7 support available</div>
                 </div>
                 <div className="flex flex-col items-center animate-fade-in" style={{animationDelay: '400ms'}}>
-                  <div className="p-4 rounded-full bg-primary/10 text-primary mb-3 animate-bounce-subtle" style={{animationDelay: '1s'}}>
+                  <div className="p-4 rounded-full bg-white-900 text-blue-100 mb-3 animate-bounce-subtle" style={{animationDelay: '1s'}}>
                     <MessageCircle className="h-6 w-6" />
                   </div>
-                  <div className="text-lg font-medium">Live Chat</div>
+                  <div className="text-lg font-medium text-blue-600">Live Chat</div>
                   <div className="text-sm text-muted-foreground">Instant assistance</div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function Contact() {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
+                  <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-100 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
                     Get In Touch
                   </div>
                   <h2 className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">Command Center</h2>
@@ -149,46 +149,46 @@ export default function Contact() {
                   <div 
                     className="flex items-start gap-4 p-4 rounded-lg border border-gray-200 dark:border-gray-100 hover:border-primary/30 hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                   >
-                    <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <div className="p-3 rounded-lg bg-blue-100 text-primary group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold group-hover:text-primary transition-colors duration-300">Email</h3>
+                      <h3 className="font-semibold text-blue-100 group-hover:text-blue-600 transition-colors duration-300">Email</h3>
                       <p className="text-muted-foreground">info@cybersoldiers.in</p>
-                      <div className="mt-2 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                      {/* <div className="mt-2 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                         <span className="mr-2 text-sm">Send email</span>
                         <ArrowRight className="h-4 w-4" />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div 
                     className="flex items-start gap-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary/30 hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                   >
-                    <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <div className="p-3 rounded-lg bg-blue-100 text-primary group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold group-hover:text-primary transition-colors duration-300">Phone</h3>
+                      <h3 className="font-semibold text-blue-100 group-hover:text-blue-600 transition-colors duration-300">Phone</h3>
                       <p className="text-muted-foreground">+91-78143-21156 </p>
-                      <div className="mt-2 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                      {/* <div className="mt-2 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                         <span className="mr-2 text-sm">Call now</span>
                         <ArrowRight className="h-4 w-4" />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div 
                     className="flex items-start gap-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary/30 hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                   >
-                    <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <div className="p-3 rounded-lg bg-blue-100 text-primary group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold group-hover:text-primary transition-colors duration-300">Location</h3>
+                      <h3 className="font-semibold text-blue-100 group-hover:text-blue-600 transition-colors duration-300">Location</h3>
                       <p className="text-muted-foreground">123 Cyber Street, Digital City, DC 12345</p>
-                      <div className="mt-2 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                      {/* <div className="mt-2 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                         <span className="mr-2 text-sm">Get directions</span>
                         <ArrowRight className="h-4 w-4" />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default function Contact() {
                 className={`space-y-6 p-6 rounded-lg border border-gray-200 dark:border-gray-800 ${isFormFocused ? 'ring-2 ring-primary/50 border-primary/30 shadow-lg' : 'hover:border-primary/30 hover:shadow-md'} transition-all duration-500`}
               >
                 <div className="space-y-4">
-                  <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
+                  <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-100 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
                     Message Us
                   </div>
                   <h2 className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">Send Message</h2>
