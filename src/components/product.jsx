@@ -15,17 +15,20 @@ export default function Product() {
     {
       image: "/placeholder.svg?height=600&width=800",
       title: "Advanced Training Environment",
-      description: "Our state-of-the-art cyber range simulates real-world attack scenarios for hands-on training."
+      description: "Our state-of-the-art cyber range simulates real-world attack scenarios for hands-on training.",
+      stats: { value: "1000+", label: "Scenarios" }
     },
     {
       image: "/placeholder.svg?height=600&width=800",
       title: "Real-time Attack Simulation",
-      description: "Experience realistic cyber attacks in a controlled environment."
+      description: "Experience realistic cyber attacks in a controlled environment.",
+      stats: { value: "24/7", label: "Monitoring" }
     },
     {
       image: "/placeholder.svg?height=600&width=800",
       title: "Comprehensive Analytics",
-      description: "Get detailed insights into your team's performance and security posture."
+      description: "Get detailed insights into your team's performance and security posture.",
+      stats: { value: "100%", label: "Accuracy" }
     }
   ]
 
@@ -149,7 +152,7 @@ export default function Product() {
   }
 
   return (
-    <main className="flex-1">
+    <main className="flex-1" ref={containerRef}>
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
         <section 
@@ -232,7 +235,7 @@ export default function Product() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </section>
 
         {/* Gallery Section */}

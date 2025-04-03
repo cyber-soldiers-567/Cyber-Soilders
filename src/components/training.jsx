@@ -156,7 +156,7 @@ export default function Training() {
   }
 
   return (
-    <main className="flex-1">
+    <main className="flex-1" ref={containerRef}>
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
         <section 
@@ -285,6 +285,16 @@ export default function Training() {
                     <div className="flex items-center gap-3">
                       <div className="text-primary p-3 rounded-full w-14 h-14 bg-gray-100 dark:bg-gray-800 flex items-center justify-center group-hover:bg-gray-200 dark:group-hover:bg-gray-700 group-hover:scale-110 transition-all duration-500">
                         {course.icon}
+                      </motion.div>
+                      <div>
+                        <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                          {course.title}
+                        </h3>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <span>{course.duration}</span>
+                          <span>•</span>
+                          <span>{course.level}</span>
+                        </div>
                       </div>
                       <div>
                         <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">{course.title}</h3>
@@ -310,6 +320,19 @@ export default function Training() {
                         </div>
                         <div className="text-s text-gray-300">{course.statLabel}</div>
                       </div>
+                      
+                      <Button className="group relative overflow-hidden">
+                        <span className="relative z-10 flex items-center">
+                          Enroll Now
+                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-r from-primary/0 via-white/20 to-primary/0"
+                          initial={{ x: "-100%" }}
+                          whileHover={{ x: "100%" }}
+                          transition={{ duration: 0.75, ease: "easeInOut" }}
+                        />
+                      </Button>
                     </div>
                     
                     <Button className="w-full mt-4 group hover:scale-105 transition-transform duration-300">

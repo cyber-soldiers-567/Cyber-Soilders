@@ -59,32 +59,38 @@ export default function Services() {
     {
       title: "Network Security",
       image: "/placeholder.svg?height=300&width=400",
-      icon: <Network className="h-6 w-6" />
+      icon: <Network className="h-6 w-6" />,
+      stats: { value: "99.9%", label: "Uptime" }
     },
     {
       title: "Cloud Security",
       image: "/placeholder.svg?height=300&width=400",
-      icon: <Cloud className="h-6 w-6" />
+      icon: <Cloud className="h-6 w-6" />,
+      stats: { value: "24/7", label: "Monitoring" }
     },
     {
       title: "Application Security",
       image: "/placeholder.svg?height=300&width=400",
-      icon: <Lock className="h-6 w-6" />
+      icon: <Lock className="h-6 w-6" />,
+      stats: { value: "100%", label: "Coverage" }
     },
     {
       title: "Endpoint Protection",
       image: "/placeholder.svg?height=300&width=400",
-      icon: <Target className="h-6 w-6" />
+      icon: <Target className="h-6 w-6" />,
+      stats: { value: "500+", label: "Endpoints" }
     },
     {
       title: "Identity & Access Management",
       image: "/placeholder.svg?height=300&width=400",
-      icon: <Key className="h-6 w-6" />
+      icon: <Key className="h-6 w-6" />,
+      stats: { value: "2FA", label: "Enabled" }
     },
     {
       title: "Data Protection",
       image: "/placeholder.svg?height=300&width=400",
-      icon: <Database className="h-6 w-6" />
+      icon: <Database className="h-6 w-6" />,
+      stats: { value: "256bit", label: "Encryption" }
     }
   ]
   
@@ -178,7 +184,7 @@ export default function Services() {
   }
 
   return (
-    <main className="flex-1">
+    <main className="flex-1" ref={containerRef}>
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
         <section 
@@ -262,17 +268,40 @@ export default function Services() {
                   <div className="aspect-video relative">
                     <img
                       alt={card.title}
-                      loading="lazy"
-                      decoding="async"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                       src={card.image}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <div className="flex items-center gap-2">
-                        <div className="text-white">{card.icon}</div>
-                        <h3 className="text-lg font-semibold text-white">{card.title}</h3>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20 opacity-80 group-hover:opacity-90 transition-opacity" />
+                    
+                    <div className="absolute inset-0 p-6 flex flex-col justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 rounded-full bg-white/10 text-white backdrop-blur-sm">
+                          {card.icon}
+                        </div>
+                        <h3 className="text-xl font-bold text-white">{card.title}</h3>
                       </div>
+                      
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="flex items-center justify-between text-white"
+                      >
+                        <div>
+                          <div className="text-2xl font-bold">
+                            {counterValues[`${card.title}-stats`] || card.stats.value}
+                          </div>
+                          <div className="text-sm opacity-80">{card.stats.label}</div>
+                        </div>
+                        
+                        <Button
+                          variant="ghost"
+                          className="text-white hover:text-primary hover:bg-white/10 transition-colors"
+                        >
+                          Learn More
+                          <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </Button>
+                      </motion.div>
                     </div>
                     <div 
                       className={`absolute inset-0 bg-primary/10 flex items-center justify-center transition-opacity duration-300 ${hoveredCard === card.title ? 'opacity-100' : 'opacity-0'}`}
