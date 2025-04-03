@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto max-w-[1200px] px-4 py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-semibold mb-3">Resources</h3>
+            <h3 className="font-semibold text-gray-100 mb-3">Resources</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-gray-500 hover:text-black dark:hover:text-white">Docs</a>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">More</h3>
+            <h3 className="font-semibold text-gray-100 mb-3">More</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-gray-500 hover:text-black dark:hover:text-white">Commerce</a>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">About Vercel</h3>
+            <h3 className="font-semibold text-gray-100 mb-3">About Vercel</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-gray-500 hover:text-black dark:hover:text-white">Home</a>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">Legal</h3>
+            <h3 className="font-semibold text-gray-100 mb-3">Legal</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-gray-500 hover:text-black dark:hover:text-white">Privacy Policy</a>
