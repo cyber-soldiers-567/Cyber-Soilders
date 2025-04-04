@@ -216,7 +216,7 @@ export default function InstantFeedback() {
                     <span className="text-blue-400">const</span>
                     <span className="text-purple-400">App</span>
                     <span className="text-white">=</span>
-                    <span className="text-yellow-400">() =></span>
+                    <span className="text-yellow-400">() =</span>
                     <span className="text-white">{" {"}</span>
                   </div>
                   <motion.div
