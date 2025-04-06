@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Shield, Target, Users, Zap, Briefcase, GraduationCap, Globe, Heart, ArrowRight, ChevronRight } from "lucide-react"
+import cyberTeamImage from '../istockphoto-1435605327-612x612.jpg';
 
 const positions = [
   {
@@ -184,7 +185,7 @@ export default function Careers() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(var(--primary),0.1),transparent_50%)]" />
           <div className="container relative z-10 px-4 md:px-6 max-w-[1200px] mx-auto">
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium animate-pulse">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-gray-100 text-sm font-medium animate-pulse">
                 <Shield className="mr-2 h-4 w-4" />
                 Join Our Elite Team
               </div>
@@ -242,7 +243,7 @@ export default function Careers() {
           <div className="container px-4 md:px-6 max-w-[1200px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
-                <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
+                <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-100 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
                   Our Purpose
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">Our Mission</h2>
@@ -268,7 +269,7 @@ export default function Careers() {
                   loading="lazy"
                   decoding="async"
                   className="object-cover h-full w-full transition-transform duration-700 group-hover:scale-110"
-                  src="/placeholder.svg?height=600&width=600"
+                  src={cyberTeamImage}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -303,7 +304,7 @@ export default function Careers() {
           
           <div className="container px-4 md:px-6 max-w-[1200px] mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 text-sm mb-6 animate-bounce-subtle">
+              <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-100 px-3 py-1 text-sm mb-6 animate-bounce-subtle">
                 Benefits
               </div>
               <h2 className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400 mb-4">Why Join Us?</h2>
@@ -319,7 +320,7 @@ export default function Careers() {
                   style={{animationDelay: `${index * 100}ms`, animationFillMode: 'forwards'}}
                 >
                   <div className="mb-6 p-3 size-12 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-primary group-hover:bg-primary/10 group-hover:scale-110 transition-all duration-500 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/30 transition-all duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-primary/0 group-hover:from-blue-800 group-hover:to-primary/30 transition-all duration-500"></div>
                     <div className="relative z-10">{benefit.icon}</div>
                   </div>
                   <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">{benefit.title}</h3>
@@ -343,7 +344,7 @@ export default function Careers() {
         >
           <div className="container px-4 md:px-6 max-w-[1200px] mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 text-sm mb-6 animate-bounce-subtle">
+              <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-100 px-3 py-1 text-sm mb-6 animate-bounce-subtle">
                 Opportunities
               </div>
               <h2 className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400 mb-4">Open Positions</h2>
@@ -359,7 +360,7 @@ export default function Careers() {
                   style={{animationDelay: `${index * 150}ms`, animationFillMode: 'forwards'}}
                 >
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-primary group-hover:bg-primary/10 group-hover:scale-110 transition-all duration-300">{position.icon}</div>
+                    <div className="p-2 rounded-full bg-gray-100 dark:bg-gray-100 text-primary group-hover:bg-gray-300 group-hover:scale-110 transition-all duration-300">{position.icon}</div>
                     <div>
                       <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">{position.title}</h3>
                       <p className="text-sm text-muted-foreground">{position.department}</p>
@@ -399,7 +400,7 @@ export default function Careers() {
           
           <div className="container px-4 md:px-6 max-w-[1200px] mx-auto">
             <div className="flex flex-col items-center text-center space-y-6">
-              <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
+              <div className="inline-block rounded-lg bg-gray-100 dark:bg-gray-100 px-3 py-1 text-sm mb-2 animate-bounce-subtle">
                 Join Us Today
               </div>
               <h2 className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">Ready to Join Our Mission?</h2>
